@@ -1,558 +1,261 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#155799">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>银临 | 中国古风音乐创作歌手</title>
-  <meta name="description" content="银临（向异），1991年生，土家族，中国古风音乐原创女歌手，毕业于南京大学外国语学院，代表作《锦鲤抄》《牵丝戏》《腐草为萤》等。">
-  <meta property="og:title" content="银临 | 中国古风音乐创作歌手" />
-  <meta property="og:description" content="银临（向异），中国古风音乐原创女歌手，代表作《锦鲤抄》《牵丝戏》《腐草为萤》等。" />
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@300;400;500&display=swap" as="style" type="text/css" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet">
   <style>
-    /* ===== Reset & Base ===== */
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { font-size: 16px; scroll-behavior: smooth; }
+    *, *::before, *::after { box-sizing: border-box; }
     body {
-      font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
-      color: #333;
-      background: #fff;
-      line-height: 1.8;
+      font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+      font-size: 16px; line-height: 1.75; color: #333; background: #fff; margin: 0;
     }
-
-    /* ===== Header / Hero ===== */
     .page-header {
       background: linear-gradient(120deg, #155799, #159957);
-      color: #fff;
-      padding: 4rem 2rem 3rem;
-      text-align: center;
+      color: #fff; padding: 3.5rem 2rem 2.8rem; text-align: center;
     }
-    .page-header .project-name {
-      font-family: 'Noto Serif SC', serif;
-      font-size: 2.6rem;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      margin-bottom: 0.6rem;
-    }
-    .page-header .project-tagline {
-      font-size: 1.05rem;
-      font-weight: 300;
-      opacity: 0.9;
-      max-width: 700px;
-      margin: 0 auto 0.5rem;
-      line-height: 1.7;
-    }
-    .page-header .project-tagline.authors {
-      font-size: 0.95rem;
-      color: #d4f0e0;
-      margin-top: 0.8rem;
-    }
-    .page-header .project-tagline.affiliation {
-      font-size: 0.88rem;
-      color: #b8e0cc;
-      margin-top: 0.3rem;
-    }
-    .btn-group {
-      margin-top: 1.6rem;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 0.6rem;
-    }
+    .page-header h1 { margin: 0 0 .5rem; font-size: 2.8rem; font-weight: 700; letter-spacing: .1em; }
+    .page-header .sub { font-size: 1.05rem; opacity: .92; margin-bottom: .4rem; }
+    .page-header .meta { font-size: .88rem; opacity: .78; margin-bottom: 1.5rem; }
+    .btn-group { display: flex; flex-wrap: wrap; justify-content: center; gap: .6rem; }
     .btn {
-      display: inline-block;
-      padding: 0.45rem 1.2rem;
-      border: 2px solid rgba(255,255,255,0.7);
-      border-radius: 0.3rem;
-      color: #fff;
-      font-size: 0.9rem;
-      text-decoration: none;
-      transition: background 0.2s, border-color 0.2s;
-      background: rgba(255,255,255,0.1);
+      display: inline-block; padding: .42rem 1.1rem;
+      border: 2px solid rgba(255,255,255,.7); border-radius: 4px;
+      color: #fff; font-size: .88rem; text-decoration: none;
+      background: rgba(255,255,255,.08); transition: background .2s;
     }
-    .btn:hover {
-      background: rgba(255,255,255,0.25);
-      border-color: #fff;
+    .btn:hover { background: rgba(255,255,255,.2); border-color: #fff; }
+    .main-content { max-width: 860px; margin: 0 auto; padding: 2.5rem 1.5rem 4rem; }
+    h2 {
+      font-size: 1.4rem; font-weight: 700; color: #159957;
+      border-bottom: 2px solid #e0f0e8; padding-bottom: .35rem; margin: 2.8rem 0 1.2rem;
     }
-
-    /* ===== Main Content ===== */
-    .main-content {
-      max-width: 860px;
-      margin: 0 auto;
-      padding: 2.5rem 2rem 4rem;
-    }
-
-    /* ===== Section Headings ===== */
-    .main-content h2 {
-      font-family: 'Noto Serif SC', serif;
-      font-size: 1.55rem;
-      font-weight: 700;
-      color: #159957;
-      border-bottom: 2px solid #e0f0e8;
-      padding-bottom: 0.4rem;
-      margin: 2.8rem 0 1.2rem;
-    }
-    .main-content h3 {
-      font-family: 'Noto Serif SC', serif;
-      font-size: 1.15rem;
-      font-weight: 600;
-      color: #155799;
-      margin: 2rem 0 0.8rem;
-    }
-
-    /* ===== Abstract Box ===== */
     .abstract-box {
-      background: #f6fbf8;
-      border-left: 4px solid #159957;
-      border-radius: 0 0.4rem 0.4rem 0;
-      padding: 1.4rem 1.6rem;
-      margin: 1.5rem 0;
-      font-size: 0.97rem;
-      line-height: 1.9;
-      color: #444;
+      background: #f6fbf8; border-left: 4px solid #159957;
+      padding: 1.2rem 1.5rem; border-radius: 0 6px 6px 0; margin-bottom: 1rem;
+      font-size: .96rem; color: #444;
     }
-    .abstract-box strong {
-      color: #155799;
-    }
-
-    /* ===== Paragraph ===== */
-    .main-content p {
-      font-size: 0.97rem;
-      line-height: 1.9;
-      color: #444;
-      margin-bottom: 1rem;
-    }
-
-    /* ===== Info Table ===== */
-    .info-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 1.2rem 0 1.8rem;
-      font-size: 0.93rem;
-    }
-    .info-table th, .info-table td {
-      padding: 0.55rem 1rem;
-      border: 1px solid #e0ece6;
-      text-align: left;
-      vertical-align: top;
-    }
-    .info-table th {
-      background: #e8f5ee;
-      color: #155799;
-      font-weight: 600;
-      width: 28%;
-      white-space: nowrap;
-    }
-    .info-table td {
-      color: #444;
-    }
-    .info-table tr:nth-child(even) td {
-      background: #f9fdfb;
-    }
-
-    /* ===== Discography Table ===== */
-    .disc-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 1rem 0 1.6rem;
-      font-size: 0.91rem;
-    }
-    .disc-table thead th {
-      background: #155799;
-      color: #fff;
-      padding: 0.5rem 0.9rem;
-      text-align: left;
-      font-weight: 500;
-    }
-    .disc-table tbody td {
-      padding: 0.5rem 0.9rem;
-      border-bottom: 1px solid #e8f0ec;
-      color: #444;
-      vertical-align: top;
-    }
-    .disc-table tbody tr:hover td {
-      background: #f0f8f4;
-    }
-    .disc-table .year {
-      color: #888;
-      font-size: 0.88rem;
-      white-space: nowrap;
-    }
-    .disc-table .tag {
-      display: inline-block;
-      padding: 0.1rem 0.5rem;
-      border-radius: 0.2rem;
-      font-size: 0.8rem;
-      background: #e0f0e8;
-      color: #159957;
-      margin-left: 0.3rem;
-    }
-    .disc-table .tag-solo { background: #e0eaf8; color: #155799; }
-    .disc-table .tag-collab { background: #fef3e0; color: #b07000; }
-
-    /* ===== Song Grid ===== */
-    .song-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-      gap: 0.7rem;
-      margin: 1rem 0 1.8rem;
-    }
-    .song-card {
-      background: #f0f8f4;
-      border: 1px solid #d0e8da;
-      border-radius: 0.4rem;
-      padding: 0.6rem 0.9rem;
-      font-size: 0.9rem;
-      color: #333;
-      text-align: center;
-      transition: background 0.15s;
-    }
-    .song-card:hover { background: #d8f0e4; }
-    .song-card .song-title { font-weight: 600; color: #155799; }
-    .song-card .song-year { font-size: 0.78rem; color: #888; margin-top: 0.2rem; }
-
-    /* ===== Timeline ===== */
-    .timeline {
-      list-style: none;
-      padding: 0;
-      margin: 1rem 0 1.8rem;
-      border-left: 3px solid #d0e8da;
-      padding-left: 1.5rem;
-    }
-    .timeline li {
-      position: relative;
-      margin-bottom: 1.1rem;
-      font-size: 0.95rem;
-      color: #444;
-      line-height: 1.7;
-    }
+    .abstract-box p { margin: .5rem 0; }
+    .abstract-box strong { color: #155799; }
+    p { font-size: .96rem; color: #444; margin: .6rem 0 1rem; }
+    table { width: 100%; border-collapse: collapse; margin: 1rem 0 1.8rem; font-size: .92rem; }
+    .profile-table td { padding: .5rem .9rem; border: 1px solid #e0ece6; vertical-align: top; }
+    .profile-table td:first-child { font-weight: 600; color: #155799; white-space: nowrap; width: 130px; background: #f0f8f4; }
+    .profile-table tr:nth-child(even) td:last-child { background: #fafcfb; }
+    .disc-table thead th { background: #155799; color: #fff; padding: .5rem .85rem; text-align: left; font-weight: 500; }
+    .disc-table tbody td { padding: .48rem .85rem; border-bottom: 1px solid #e8f0ec; color: #444; vertical-align: top; }
+    .disc-table tbody tr:hover td { background: #f0f8f4; }
+    .disc-table td:first-child { font-weight: 600; color: #155799; }
+    .song-table thead th { background: #159957; color: #fff; padding: .45rem .75rem; text-align: left; font-weight: 500; }
+    .song-table tbody td { padding: .42rem .75rem; border-bottom: 1px solid #eef4f0; color: #444; }
+    .song-table tbody tr:hover td { background: #f5fdf8; }
+    .tag { display: inline-block; padding: .08rem .42rem; border-radius: 3px; font-size: .78rem; font-weight: 600; }
+    .tag-solo { background: #e8f5ee; color: #159957; }
+    .tag-duo  { background: #e8f0fb; color: #155799; }
+    .tag-multi{ background: #fef3e2; color: #c87800; }
+    .tag-ost  { background: #fde8e8; color: #c80000; }
+    .timeline { list-style: none; padding: 0 0 0 1.5rem; margin: 1rem 0 1.8rem; border-left: 3px solid #d0e8da; }
+    .timeline li { position: relative; margin-bottom: 1rem; font-size: .94rem; color: #444; line-height: 1.7; }
     .timeline li::before {
-      content: '';
-      position: absolute;
-      left: -1.85rem;
-      top: 0.45rem;
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      background: #159957;
-      border: 2px solid #fff;
-      box-shadow: 0 0 0 2px #159957;
+      content: ''; position: absolute; left: -1.85rem; top: .45rem;
+      width: 10px; height: 10px; border-radius: 50%;
+      background: #159957; border: 2px solid #fff; box-shadow: 0 0 0 2px #159957;
     }
-    .timeline .year-label {
-      display: inline-block;
-      background: #155799;
-      color: #fff;
-      font-size: 0.82rem;
-      padding: 0.1rem 0.5rem;
-      border-radius: 0.2rem;
-      margin-right: 0.5rem;
-      font-weight: 500;
+    .year-label {
+      display: inline-block; background: #155799; color: #fff;
+      font-size: .8rem; padding: .08rem .48rem; border-radius: 3px; margin-right: .45rem; font-weight: 500;
     }
-
-    /* ===== BibTeX / Citation ===== */
     .bibtex-box {
-      background: #f4f4f4;
-      border: 1px solid #ddd;
-      border-radius: 0.4rem;
-      padding: 1.2rem 1.4rem;
-      font-family: 'Courier New', Courier, monospace;
-      font-size: 0.85rem;
-      color: #333;
-      overflow-x: auto;
-      line-height: 1.7;
-      margin: 1rem 0 1.5rem;
+      background: #1e2a3a; color: #c9d8e8; border-radius: 6px;
+      padding: 1.2rem 1.4rem; font-family: "SFMono-Regular", Consolas, monospace;
+      font-size: .82rem; line-height: 1.65; overflow-x: auto; white-space: pre; margin: 1rem 0 1.5rem;
     }
-
-    /* ===== Highlight Badges ===== */
-    .badge-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.6rem;
-      margin: 1rem 0 1.5rem;
+    .links-row { display: flex; flex-wrap: wrap; gap: .7rem; margin-top: .8rem; }
+    .link-chip {
+      display: inline-flex; align-items: center; gap: .3rem;
+      padding: .38rem .9rem; background: #f0f6ff; border: 1px solid #c5d8f5;
+      border-radius: 20px; color: #155799; font-size: .88rem; text-decoration: none; transition: background .2s;
     }
-    .badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.35rem;
-      background: #e8f5ee;
-      border: 1px solid #b8ddc8;
-      border-radius: 2rem;
-      padding: 0.3rem 0.9rem;
-      font-size: 0.88rem;
-      color: #155799;
-      font-weight: 500;
-    }
-    .badge .dot {
-      width: 8px; height: 8px;
-      border-radius: 50%;
-      background: #159957;
-      flex-shrink: 0;
-    }
-
-    /* ===== Footer ===== */
-    .site-footer {
-      border-top: 1px solid #e0ece6;
-      padding: 1.5rem 2rem;
-      text-align: center;
-      font-size: 0.82rem;
-      color: #999;
-    }
+    .link-chip:hover { background: #ddeeff; }
+    .site-footer { text-align: center; padding: 1.5rem; font-size: .8rem; color: #aaa; border-top: 1px solid #eee; }
     .site-footer a { color: #159957; text-decoration: none; }
-    .site-footer a:hover { text-decoration: underline; }
-
-    /* ===== Responsive ===== */
     @media (max-width: 600px) {
-      .page-header .project-name { font-size: 1.8rem; }
-      .main-content { padding: 1.5rem 1.2rem 3rem; }
-      .song-grid { grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); }
+      .page-header h1 { font-size: 2rem; }
+      .main-content { padding: 1.5rem 1rem 3rem; }
     }
   </style>
 </head>
 <body>
 
-<!-- ===== HERO HEADER ===== -->
-<header class="page-header" role="banner">
-  <h1 class="project-name">银 临</h1>
-  <p class="project-tagline">
-    中国古风音乐原创创作歌手 · 作曲人 · 主唱
-  </p>
-  <p class="project-tagline authors">
-    本名：<strong style="color:#d4f0e0">向异</strong>
-    &nbsp;·&nbsp;
-    民族：<strong style="color:#d4f0e0">土家族</strong>
-    &nbsp;·&nbsp;
-    生于：<strong style="color:#d4f0e0">1991年12月11日</strong>
-  </p>
-  <p class="project-tagline affiliation">
-    南京大学 外国语学院 英语系 · 千城醉歌 曲部声部 · 异新音乐工作室
-  </p>
+<header class="page-header">
+  <h1>银 临</h1>
+  <p class="sub">中国古风音乐原创创作歌手 · 作曲人 · 主唱</p>
+  <p class="meta">本名：向异 &nbsp;·&nbsp; 英文名：Rachel / Yinlin &nbsp;·&nbsp; 出生：1991年12月11日 &nbsp;·&nbsp; 湖南湘西</p>
   <div class="btn-group">
-    <a href="https://music.163.com/#/artist?id=12138269" class="btn">🎵 网易云音乐</a>
-    <a href="https://y.qq.com/n/ryqq/singer/001IXQZL2PJhGX" class="btn">🎵 QQ 音乐</a>
-    <a href="https://yinlin.wiki/" class="btn">🌐 官方网站</a>
-    <a href="https://space.bilibili.com/1388480" class="btn">📺 哔哩哔哩</a>
-    <a href="https://weibo.com/yinlin1211" class="btn">📣 微博</a>
+    <a class="btn" href="https://music.163.com/#/artist?id=12138269" target="_blank">网易云音乐</a>
+    <a class="btn" href="https://y.qq.com/n/ryqq/singer/001IXQZL2PJhGX" target="_blank">QQ 音乐</a>
+    <a class="btn" href="https://open.spotify.com/artist/0LMnFMgMJxFJOoHfXlbWEL" target="_blank">Spotify</a>
+    <a class="btn" href="https://space.bilibili.com/1388480" target="_blank">哔哩哔哩</a>
+    <a class="btn" href="https://yinlin.wiki/" target="_blank">官方粉丝站</a>
   </div>
 </header>
 
-<!-- ===== MAIN CONTENT ===== -->
-<main class="main-content" role="main">
+<main class="main-content">
 
-  <!-- Abstract -->
   <h2>简介（Abstract）</h2>
   <div class="abstract-box">
-    <strong>银临</strong>（英文名 Rachel，本名向异），1991年12月11日出生于湖南省湘西土家族苗族自治州，土家族，中国内地<strong>古风音乐原创女歌手</strong>，毕业于南京大学外国语学院英语系。她自幼习琴，具有极高的音乐天赋，2006年入驻"5SING原创音乐基地"并成为推荐歌手。目前属于原创音乐团队"千城醉歌"曲部声部成员，同时担任"异新音乐工作室"作曲人与主唱。
-    <br><br>
-    银临的作品以<strong>古风音乐</strong>为主，善用文学典故与历史意象表达个人情感，音色兼具仙侠文化的空灵与细腻。代表作《锦鲤抄》《牵丝戏》《腐草为萤》《棠梨煎雪》《不老梦》等在古风圈引发广泛传唱，其中《锦鲤抄》更掀起"全民炒鲤鱼"的翻唱热潮，被誉为古风圈标志性作品之一。
+    <p><strong>银临</strong>（英文名 Rachel，本名向异），1991年12月11日出生于湖南省湘西土家族苗族自治州，土家族，中国内地<strong>古风音乐原创创作女歌手</strong>，毕业于南京大学外国语学院英语系。自幼习琴，2006年入驻"5SING原创音乐基地"并成为推荐歌手，此后持续深耕古风音乐创作领域近二十年。</p>
+    <p>银临现属原创音乐团队"千城醉歌"曲部声部成员，同时担任"异新音乐工作室"作曲人与主唱。其作品以<strong>古风音乐</strong>为主，兼及国风、民谣、仙侠等风格，善用文学典故与历史意象，音色空灵细腻。代表作《锦鲤抄》《牵丝戏》《腐草为萤》《棠梨煎雪》等在古风圈广泛流传。至今已发布正式作品逾 <strong>338 首</strong>，拥有《腐草为萤》《蚍蜉渡海》《琉璃》《山色有无中》《粼粼 EP》等多张个人专辑与 EP。</p>
   </div>
 
-  <!-- Key Info -->
   <h2>基本信息（Profile）</h2>
-  <table class="info-table">
+  <table class="profile-table">
     <tbody>
-      <tr><th>本名</th><td>向异</td></tr>
-      <tr><th>英文名</th><td>Rachel / Yinlin</td></tr>
-      <tr><th>出生日期</th><td>1991年12月11日</td></tr>
-      <tr><th>出生地</th><td>湖南省湘西土家族苗族自治州</td></tr>
-      <tr><th>民族</th><td>土家族</td></tr>
-      <tr><th>学历</th><td>南京大学 外国语学院 英语系（本科）</td></tr>
-      <tr><th>音乐风格</th><td>古风音乐、国风、仙侠、民谣</td></tr>
-      <tr><th>职业</th><td>创作歌手、作曲人、主唱</td></tr>
-      <tr><th>所属团队</th><td>千城醉歌（曲部声部）、异新音乐工作室</td></tr>
-      <tr><th>活跃年份</th><td>2006年至今</td></tr>
-      <tr><th>代表作品</th><td>《锦鲤抄》《牵丝戏》《腐草为萤》《棠梨煎雪》《不老梦》《泸沽寻梦》</td></tr>
+      <tr><td>本名</td><td>向异</td></tr>
+      <tr><td>英文名</td><td>Rachel / Yinlin</td></tr>
+      <tr><td>出生日期</td><td>1991年12月11日</td></tr>
+      <tr><td>出生地</td><td>湖南省湘西土家族苗族自治州</td></tr>
+      <tr><td>民族</td><td>土家族</td></tr>
+      <tr><td>学历</td><td>南京大学 外国语学院 英语系（本科）</td></tr>
+      <tr><td>音乐风格</td><td>古风音乐、国风、仙侠、民谣</td></tr>
+      <tr><td>职业</td><td>创作歌手、作曲人、主唱</td></tr>
+      <tr><td>所属团队</td><td>千城醉歌（曲部声部）、异新音乐工作室</td></tr>
+      <tr><td>活跃年份</td><td>2006年至今</td></tr>
+      <tr><td>正式作品数</td><td>338 首（截至 2026 年 3 月，来源：yinlin.wiki）</td></tr>
     </tbody>
   </table>
 
-  <!-- Highlights -->
-  <h2>音乐特色（Musical Characteristics）</h2>
-  <div class="badge-row">
-    <span class="badge"><span class="dot"></span>古风原创创作</span>
-    <span class="badge"><span class="dot"></span>仙侠空灵音色</span>
-    <span class="badge"><span class="dot"></span>文学典故运用</span>
-    <span class="badge"><span class="dot"></span>自主作曲编词</span>
-    <span class="badge"><span class="dot"></span>古筝 · 电子琴</span>
-    <span class="badge"><span class="dot"></span>国风演唱会</span>
-  </div>
-  <p>
-    银临的音乐创作以<strong>古典诗词意境</strong>为底色，融合现代编曲技术，形成独特的"古风现代"风格。她的歌词大量借鉴唐诗宋词、历史典故与民间传说，以第一人称的情感叙事构建出细腻的意境空间。其音色清澈空灵，高音穿透力强，低音温润内敛，被乐迷誉为"声音里有画面感"的歌手。
-  </p>
-  <p>
-    在创作层面，银临不仅担任主唱，更亲自参与大量作品的<strong>作曲与编曲</strong>工作，与长期合作伙伴"灰原穷"共同打造了一系列广受好评的古风佳作。她的音乐企划"千城醉歌"亦是古风圈重要的原创音乐团队之一。
-  </p>
-
-  <!-- Discography - Albums -->
-  <h2>正式专辑（Discography）</h2>
+  <h2>正式专辑与 EP（Discography）</h2>
+  <p>数据来源：<a href="https://yinlin.wiki/museum" target="_blank">yinlin.wiki 博物馆</a>，按发行时间倒序排列。</p>
   <table class="disc-table">
     <thead>
-      <tr>
-        <th>专辑名称</th>
-        <th>发行时间</th>
-        <th>收录曲目</th>
-        <th>备注</th>
-      </tr>
+      <tr><th>专辑 / EP 名称</th><th>发行时间</th><th>类型</th><th>曲目（节选）</th></tr>
     </thead>
     <tbody>
-      <tr>
-        <td><strong>《腐草为萤》</strong></td>
-        <td class="year">2013-09-29</td>
-        <td>11首（含9首全新原创）</td>
-        <td>首张个人专辑，首发500张两天售空</td>
-      </tr>
-      <tr>
-        <td><strong>《蚍蜉渡海》</strong></td>
-        <td class="year">2017-09-15</td>
-        <td>—</td>
-        <td>第二张个人专辑</td>
-      </tr>
-      <tr>
-        <td><strong>《琉璃》</strong></td>
-        <td class="year">2020-07-26</td>
-        <td>—</td>
-        <td>第三张个人专辑</td>
-      </tr>
-      <tr>
-        <td><strong>《山色有无中》</strong></td>
-        <td class="year">2025-01-17</td>
-        <td>—</td>
-        <td>最新专辑；同名全国巡演（2023–2024）</td>
-      </tr>
-      <tr>
-        <td><strong>《粼粼 EP》</strong></td>
-        <td class="year">2025–2026</td>
-        <td>粼粼 / 断尾 / 碧溪水 / 天和山雨雪 等</td>
-        <td>最新 EP；粼粼巡回演唱会（2025–）</td>
-      </tr>
+      <tr><td>粼粼 EP</td><td>2025–2026</td><td>银临 EP</td><td>粼粼、断尾、碧溪水、天和山雨雪</td></tr>
+      <tr><td>山色有无中</td><td>2024</td><td>银临专辑</td><td>山色有无中、少女庄周、夜国、眠花去、魄心、我生于野 等 12 首</td></tr>
+      <tr><td>离地十公分 EP</td><td>2023-08-28</td><td>银临 EP</td><td>Drive Until Sunset、日出前起飞、一命矣、见夏如晤、眉南边 等 7 首</td></tr>
+      <tr><td>琉璃</td><td>2020-07-26</td><td>银临专辑</td><td>亲爱的瑞秋、记忘歌、海棠春睡、白噪音、美人灯 等 11 首</td></tr>
+      <tr><td>风花雪月 EP</td><td>2020-04-18</td><td>银临 EP</td><td>焦骨、月球、珍珠、无题雪（4 首）</td></tr>
+      <tr><td>蚍蜉渡海</td><td>2017-07-30</td><td>银临专辑</td><td>秋水、如一、青山揽梦、是风动、卑微情书 等 11 首</td></tr>
+      <tr><td>腐草为萤</td><td>2013-09-29</td><td>银临专辑</td><td>落梅笺、洒拓歌、浮生辞、故城、Zodiac 等 11 首；首发 500 张两天售空</td></tr>
+      <tr><td>银临（2012）EP</td><td>2012</td><td>银临 EP</td><td>风烟倦、七夕、商女恨、谁能不思量（4 首）</td></tr>
     </tbody>
   </table>
 
-  <!-- Representative Works -->
-  <h2>代表作品（Representative Works）</h2>
-  <p>以下为银临最具代表性的经典曲目，在古风圈及网络音乐平台广泛流传：</p>
-  <div class="song-grid">
-    <div class="song-card"><div class="song-title">锦鲤抄</div><div class="song-year">2013 · 全民翻唱</div></div>
-    <div class="song-card"><div class="song-title">牵丝戏</div><div class="song-year">2015 · ft. Aki阿杰</div></div>
-    <div class="song-card"><div class="song-title">腐草为萤</div><div class="song-year">2013 · 首张专辑</div></div>
-    <div class="song-card"><div class="song-title">棠梨煎雪</div><div class="song-year">2013 · 经典</div></div>
-    <div class="song-card"><div class="song-title">不老梦</div><div class="song-year">2016 · 获奖曲目</div></div>
-    <div class="song-card"><div class="song-title">泸沽寻梦</div><div class="song-year">代表作</div></div>
-    <div class="song-card"><div class="song-title">意难平</div><div class="song-year">代表作</div></div>
-    <div class="song-card"><div class="song-title">珍珠</div><div class="song-year">代表作</div></div>
-    <div class="song-card"><div class="song-title">无题雪</div><div class="song-year">代表作</div></div>
-    <div class="song-card"><div class="song-title">快雪</div><div class="song-year">2023</div></div>
-    <div class="song-card"><div class="song-title">粼粼</div><div class="song-year">2025 · MV</div></div>
-    <div class="song-card"><div class="song-title">山色有无中</div><div class="song-year">2024 · 巡演主题</div></div>
-  </div>
+  <h2>近期作品（Recent Works）</h2>
+  <p>以下为 2023 年至今发布的部分作品，完整列表（338 首）见 <a href="https://yinlin.wiki/music" target="_blank">yinlin.wiki/music</a>。</p>
+  <table class="song-table">
+    <thead>
+      <tr><th>歌曲名</th><th>发布时间</th><th>所属专辑</th><th>类型</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>天和山雨雪</td><td>2026-03-07</td><td>粼粼 EP</td><td><span class="tag tag-duo">双人原唱</span></td></tr>
+      <tr><td>碧溪水</td><td>2026-02-09</td><td>粼粼 EP</td><td><span class="tag tag-solo">SOLO</span></td></tr>
+      <tr><td>断尾</td><td>2025-11-14</td><td>粼粼 EP</td><td><span class="tag tag-solo">SOLO</span></td></tr>
+      <tr><td>粼粼</td><td>2025-10-14</td><td>粼粼 EP</td><td><span class="tag tag-solo">SOLO</span></td></tr>
+      <tr><td>过春痕</td><td>2025-07-25</td><td>单曲</td><td><span class="tag tag-solo">SOLO</span></td></tr>
+      <tr><td>半夏生</td><td>2025-06-21</td><td>单曲</td><td><span class="tag tag-solo">SOLO</span></td></tr>
+      <tr><td>最美的相逢</td><td>2024-12-27</td><td>单曲</td><td><span class="tag tag-multi">多人原唱</span></td></tr>
+      <tr><td>春归</td><td>2024-08-16</td><td>山色有无中</td><td><span class="tag tag-solo">SOLO</span></td></tr>
+      <tr><td>青花</td><td>2024-08-15</td><td>单曲</td><td><span class="tag tag-solo">SOLO</span></td></tr>
+      <tr><td>往岁乘霄</td><td>2024-07-17</td><td>单曲</td><td><span class="tag tag-solo">SOLO</span></td></tr>
+      <tr><td>山色有无中</td><td>2024-06-21</td><td>山色有无中</td><td><span class="tag tag-solo">SOLO</span></td></tr>
+      <tr><td>惊鸿</td><td>2024-06-01</td><td>单曲</td><td><span class="tag tag-solo">SOLO</span></td></tr>
+      <tr><td>少女庄周</td><td>2024-01-01</td><td>山色有无中</td><td><span class="tag tag-solo">SOLO</span></td></tr>
+      <tr><td>夜国</td><td>2023-11-17</td><td>山色有无中</td><td><span class="tag tag-solo">SOLO</span></td></tr>
+      <tr><td>眠花去</td><td>2023-09-20</td><td>山色有无中</td><td><span class="tag tag-solo">SOLO</span></td></tr>
+      <tr><td>快雪</td><td>2023-06-16</td><td>单曲</td><td><span class="tag tag-solo">SOLO</span></td></tr>
+      <tr><td>天意安排</td><td>2023-03-22</td><td>单曲</td><td><span class="tag tag-solo">SOLO</span></td></tr>
+    </tbody>
+  </table>
 
-  <!-- Career Timeline -->
   <h2>演艺经历（Career Timeline）</h2>
   <ul class="timeline">
-    <li>
-      <span class="year-label">2006</span>
-      入驻"5SING原创音乐基地"，成为该平台推荐歌手，开始正式发布原创作品。
-    </li>
-    <li>
-      <span class="year-label">2011</span>
-      担任南京大学"歌声魅影"剧社年度音乐剧《歌剧魅影》主演。
-    </li>
-    <li>
-      <span class="year-label">2012</span>
-      担任南京大学年度音乐剧"红磨坊"导演；负责院歌《我们的世界》作曲兼主唱；凭《风烟倦》《商女恨》获第二届古风原创歌曲大赛第6、7名。
-    </li>
-    <li>
-      <span class="year-label">2013</span>
-      发布首张个人专辑《腐草为萤》，首发500张两天售空；《锦鲤抄》引发"全民炒鲤鱼"翻唱热潮。
-    </li>
-    <li>
-      <span class="year-label">2014</span>
-      参加北京"肆季轮回"古风演唱会；参与橘洲汉风音乐节；为网络游戏《倩女幽魂2》演唱主题曲《十世镜》。
-    </li>
-    <li>
-      <span class="year-label">2015</span>
-      参与北京人民大会堂"踏歌行千山"古风音乐会；与歌手河图合作拍摄《醉逍遥》主题曲 MV；发布《牵丝戏》（ft. Aki阿杰）。
-    </li>
-    <li>
-      <span class="year-label">2016</span>
-      参与国风动漫音乐节重庆站；出席北京鸟巢"心时纪"大型国风演唱会；发布《不老梦》《东风志》等。
-    </li>
-    <li>
-      <span class="year-label">2018</span>
-      在网易云音乐"爱乐之战"担任特约主持人（首次主持节目）；举办首次个人线下 Live"临江仙"（杭州、南京两场）。
-    </li>
-    <li>
-      <span class="year-label">2019</span>
-      《不老梦》与《锦鲤抄》获共青团中央主办"最受青年人欢迎的国风音乐"奖项。
-    </li>
-    <li>
-      <span class="year-label">2020</span>
-      发布第三张个人专辑《琉璃》。
-    </li>
-    <li>
-      <span class="year-label">2022</span>
-      在杭州举行个人专场演出"半梦"。
-    </li>
-    <li>
-      <span class="year-label">2023–2024</span>
-      举办"山色有无中"全国巡演，历经北京、成都、长沙、西安、南京、武汉、深圳、广州、青岛、上海、重庆、杭州等20余座城市。
-    </li>
-    <li>
-      <span class="year-label">2025</span>
-      发布最新专辑《山色有无中》；官宣"粼粼"巡回演唱会，首站杭州黄龙体育中心体育馆（11月15日）。
-    </li>
+    <li><span class="year-label">2006</span>入驻"5SING原创音乐基地"，成为推荐歌手，开始正式发布原创作品。</li>
+    <li><span class="year-label">2011</span>担任南京大学"歌声魅影"剧社年度音乐剧《歌剧魅影》主演。</li>
+    <li><span class="year-label">2012</span>担任南京大学年度音乐剧"红磨坊"导演；负责院歌《我们的世界》作曲兼主唱；凭《风烟倦》《商女恨》获第二届古风原创歌曲大赛第 6、7 名；发布《银临（2012）EP》。</li>
+    <li><span class="year-label">2013</span>发布首张个人专辑《腐草为萤》，首发 500 张两天售空；《锦鲤抄》引发"全民炒鲤鱼"翻唱热潮。</li>
+    <li><span class="year-label">2014</span>参加北京"肆季轮回"古风演唱会；参与橘洲汉风音乐节；为网络游戏《倩女幽魂2》演唱主题曲《十世镜》。</li>
+    <li><span class="year-label">2015</span>参与北京人民大会堂"踏歌行千山"古风音乐会；发布《牵丝戏》（ft. Aki阿杰）。</li>
+    <li><span class="year-label">2016</span>出席北京鸟巢"心时纪"大型国风演唱会；发布《不老梦》《东风志》等。</li>
+    <li><span class="year-label">2017</span>发布第二张个人专辑《蚍蜉渡海》。</li>
+    <li><span class="year-label">2018</span>在网易云音乐"爱乐之战"担任特约主持人；举办首次个人线下 Live"临江仙"（杭州、南京两场）。</li>
+    <li><span class="year-label">2019</span>《不老梦》与《锦鲤抄》获共青团中央主办"最受青年人欢迎的国风音乐"奖项。</li>
+    <li><span class="year-label">2020</span>发布第三张个人专辑《琉璃》；发布《风花雪月 EP》。</li>
+    <li><span class="year-label">2022</span>在杭州举行个人专场演出"半梦"；登上《环球人物》2022 年第 22 期杂志。</li>
+    <li><span class="year-label">2023</span>发布《离地十公分 EP》；开启"山色有无中"全国巡演（北京、成都、长沙、西安、南京、武汉、深圳、广州等 20 余城）。</li>
+    <li><span class="year-label">2024</span>发布专辑《山色有无中》（12 首）；登上《睿士 ELLEMEN》杂志 2025 年 8 月号。</li>
+    <li><span class="year-label">2025</span>发布《粼粼 EP》（粼粼、断尾、碧溪水、天和山雨雪）；官宣"粼粼"巡回演唱会，首站杭州黄龙体育中心体育馆（11 月 15 日）。</li>
+    <li><span class="year-label">2026</span>发布《天和山雨雪》（ft. 司南）；参与 2026 湖南戏曲春晚演出《佳人湘聚》。</li>
   </ul>
 
-  <!-- For Others -->
-  <h2>为他人创作（Compositions for Others）</h2>
-  <p>银临不仅是出色的演唱者，亦是多产的作曲人，曾为多位歌手及游戏、影视作品创作音乐：</p>
+  <h2>主要创作人员（Key Collaborators）</h2>
+  <p>以下信息来源于 yinlin.wiki API 歌曲数据库的 staff 字段，为银临作品中频繁出现的创作人员：</p>
   <table class="disc-table">
     <thead>
-      <tr><th>作品</th><th>演唱者</th><th>时间</th><th>备注</th></tr>
+      <tr><th>姓名</th><th>主要职能</th><th>代表合作作品</th></tr>
     </thead>
     <tbody>
-      <tr><td>东风志（作曲）</td><td>Aki阿杰</td><td class="year">2016</td><td>《魔道祖师》同人歌曲</td></tr>
-      <tr><td>狐言（作曲）</td><td>河图 &amp; 洛天依</td><td class="year">2015</td><td>倩女女刀同人角色歌</td></tr>
-      <tr><td>守（作曲）</td><td>河图</td><td class="year">2015</td><td>《诛仙世界》官方推介曲</td></tr>
-      <tr><td>天禁诀（作曲）</td><td>光良</td><td class="year">2015</td><td>网游《天之禁》主题曲</td></tr>
-      <tr><td>莫问归处（作曲）</td><td>HITA / 小曲儿 等</td><td class="year">2015</td><td>多人合唱</td></tr>
-      <tr><td>皇太后（演唱）</td><td>银临</td><td class="year">2016</td><td>《芈月传》主题曲</td></tr>
+      <tr><td>银临</td><td>作曲、演唱</td><td>《天和山雨雪》《碧溪水》《断尾》《粼粼》等大量作品</td></tr>
+      <tr><td>灰原穷</td><td>编曲</td><td>《天和山雨雪》《碧溪水》等多首</td></tr>
+      <tr><td>慕清明</td><td>作词</td><td>《天和山雨雪》等</td></tr>
+      <tr><td>若紫鸢</td><td>作词</td><td>《碧溪水》等</td></tr>
+      <tr><td>沃特艾文儿</td><td>作词</td><td>《断尾》等</td></tr>
+      <tr><td>1AN孙毅然</td><td>编曲</td><td>《断尾》等</td></tr>
+      <tr><td>司南</td><td>演唱（合唱）</td><td>《天和山雨雪》</td></tr>
+      <tr><td>Aki 阿杰</td><td>演唱（合唱）</td><td>《牵丝戏》</td></tr>
     </tbody>
   </table>
 
-  <!-- Citation -->
-  <h2>引用信息（Citation）</h2>
-  <p>如需引用本页面或相关资料，请参考以下格式：</p>
-  <div class="bibtex-box">
-@misc{yinlin2025,<br>
-&nbsp;&nbsp;author&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= {向异 (银临)},<br>
-&nbsp;&nbsp;title&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= {银临 — 中国古风音乐原创创作歌手},<br>
-&nbsp;&nbsp;year&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= {2025},<br>
-&nbsp;&nbsp;note&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= {活跃于2006年至今，代表作《锦鲤抄》《牵丝戏》《腐草为萤》},<br>
-&nbsp;&nbsp;url&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= {https://yinlin.wiki/}<br>
-}
+  <h2>实体藏品（Physical Releases）</h2>
+  <p>数据来源：<a href="https://yinlin.wiki/museum" target="_blank">yinlin.wiki 博物馆</a>，共收录 11 件藏品：</p>
+  <table class="disc-table">
+    <thead>
+      <tr><th>藏品名称</th><th>类型</th><th>发行时间</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>粼粼杭州站礼包</td><td>巡演礼包</td><td>2025-11-15</td></tr>
+      <tr><td>《睿士 ELLEMEN》杂志 2025 年 8 月号</td><td>图书杂志</td><td>2025-08-01</td></tr>
+      <tr><td>实体专辑《山色有无中》简装版</td><td>实体专辑</td><td>2024-12-17</td></tr>
+      <tr><td>《山色有无中》巡演北京收官场物料</td><td>巡演礼包</td><td>2024-07-26</td></tr>
+      <tr><td>实体 EP《离地十公分》</td><td>实体专辑</td><td>2023-08-28</td></tr>
+      <tr><td>《环球人物》2022 年第 22 期</td><td>图书杂志</td><td>2022-11-16</td></tr>
+      <tr><td>实体专辑《琉璃》</td><td>实体专辑</td><td>2020-11-01</td></tr>
+      <tr><td>实体 EP《风花雪月》</td><td>实体专辑</td><td>2020-04-18</td></tr>
+      <tr><td>《蚍蜉渡海》全彩明信片</td><td>明信片</td><td>2017-07-30</td></tr>
+      <tr><td>实体专辑《蚍蜉渡海》</td><td>实体专辑</td><td>2017-07-30</td></tr>
+      <tr><td>实体专辑《腐草为萤》</td><td>实体专辑</td><td>2013-09-29</td></tr>
+    </tbody>
+  </table>
+
+  <h2>相关链接（Links）</h2>
+  <div class="links-row">
+    <a class="link-chip" href="https://yinlin.wiki/" target="_blank">🌐 yinlin.wiki（官方粉丝站）</a>
+    <a class="link-chip" href="https://music.163.com/#/artist?id=12138269" target="_blank">🎵 网易云音乐</a>
+    <a class="link-chip" href="https://y.qq.com/n/ryqq/singer/001IXQZL2PJhGX" target="_blank">🎵 QQ 音乐</a>
+    <a class="link-chip" href="https://open.spotify.com/artist/0LMnFMgMJxFJOoHfXlbWEL" target="_blank">🎵 Spotify</a>
+    <a class="link-chip" href="https://space.bilibili.com/1388480" target="_blank">📺 哔哩哔哩</a>
+    <a class="link-chip" href="https://zh.wikipedia.org/wiki/%E9%93%B6%E4%B8%B4" target="_blank">📖 维基百科</a>
   </div>
 
-  <!-- Related Links -->
-  <h2>相关链接（Related Links）</h2>
-  <p>
-    银临的音乐可在以下平台收听与了解：
-    <a href="https://music.163.com/#/artist?id=12138269" style="color:#159957">网易云音乐</a>、
-    <a href="https://y.qq.com/n/ryqq/singer/001IXQZL2PJhGX" style="color:#159957">QQ 音乐</a>、
-    <a href="https://open.spotify.com/artist/1cqzsjjjNhqUpr2UL3kCvW" style="color:#159957">Spotify</a>、
-    <a href="https://space.bilibili.com/1388480" style="color:#159957">哔哩哔哩</a>。
-    官方粉丝社区网站：<a href="https://yinlin.wiki/" style="color:#159957">yinlin.wiki</a>。
-    维基百科词条：<a href="https://zh.wikipedia.org/zh-cn/%E9%93%B6%E4%B8%B4" style="color:#159957">银临 — 维基百科</a>。
-  </p>
+  <h2>引用（Citation）</h2>
+  <div class="bibtex-box">@misc{yinlin_wiki_2026,
+  author    = {yinlin.wiki 粉丝站},
+  title     = {银临 — 中国古风音乐原创创作歌手},
+  year      = {2026},
+  note      = {活跃于 2006 年至今，正式作品 338 首，
+               代表作《锦鲤抄》《牵丝戏》《腐草为萤》《粼粼》},
+  url       = {https://yinlin.wiki/}
+}</div>
 
 </main>
 
-<!-- ===== FOOTER ===== -->
 <footer class="site-footer">
   <p>
-    本页面内容整理自公开资料，仅供学习与介绍用途。
-    页面风格参考自 <a href="https://muzairkhattak.github.io/multimodal-prompt-learning/" target="_blank">MaPLe Project Page</a>（Jekyll Cayman Theme）。
-    &copy; 2025 · <a href="https://yinlin.wiki/" target="_blank">yinlin.wiki</a>
+    页面数据来源：<a href="https://yinlin.wiki/" target="_blank">yinlin.wiki</a>
+    &nbsp;|&nbsp;
+    页面风格参考：<a href="https://muzairkhattak.github.io/multimodal-prompt-learning/" target="_blank">MaPLe Project Page</a>
   </p>
 </footer>
 
